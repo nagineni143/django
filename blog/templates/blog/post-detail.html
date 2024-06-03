@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+    This Post Title
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-detail.css" %}">
+{% endblock  %}
+
+{% block content %}
+    <section id="summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{% static "blog/images/mountains.jpg" %}" alt="Post Title">
+            <address>By Shilpa</address>
+            <div>
+                Last updated on <time>July 10th</time>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque eos quos mollitia rem voluptatum voluptatibus dolorum fugit, ex quia sunt eaque aperiam eveniet reprehenderit sequi ratione necessitatibus placeat nemo!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque eos quos mollitia rem voluptatum voluptatibus dolorum fugit, ex quia sunt eaque aperiam eveniet reprehenderit sequi ratione necessitatibus placeat nemo!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis itaque eos quos mollitia rem voluptatum voluptatibus dolorum fugit, ex quia sunt eaque aperiam eveniet reprehenderit sequi ratione necessitatibus placeat nemo!
+        </p>
+    </main>
+{% endblock %}
